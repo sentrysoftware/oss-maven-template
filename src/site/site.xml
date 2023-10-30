@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<site name="${project.name}">
+
+	<skin>
+		<groupId>org.apache.maven.skins</groupId>
+		<artifactId>maven-fluido-skin</artifactId>
+		<version>2.0.0-M8</version>
+	</skin>
+
+	<custom>
+		<fluidoSkin>
+			<gitHub>
+				<projectId>sentrysoftware/MYREPO</projectId>
+				<ribbonOrientation>right</ribbonOrientation>
+				<ribbonColor>red</ribbonColor>
+			</gitHub>
+		</fluidoSkin>
+	</custom>
+
+	<bannerLeft name="${project.name}" href="/index.html" />
+
+	<bannerRight href="https://sentrysoftware.com">
+		<image src="images/sentry-logo-179x75px.png" width="179" height="75" style="margin-right: 70px;"/>
+	</bannerRight>
+
+	<publishDate position="right" />
+
+	<body>
+
+		<links>
+			<!-- <item name="First Link" href="https://sentrysoftware.com" /> -->
+		</links>
+
+		<breadcrumbs>
+			<!-- <item name="Home" href="/" /> -->
+		</breadcrumbs>
+
+		<menu name="User Documentation">
+			<item name="Getting Started" href="index.html" />
+		</menu>
+
+		<menu ref="reports" />
+	</body>
+
+</site>
