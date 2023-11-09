@@ -77,7 +77,7 @@
 			<dependency>
 				<groupId>org.junit</groupId>
 				<artifactId>junit-bom</artifactId>
-				<version>5.10.0</version>
+				<version>5.10.1</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -106,7 +106,7 @@
 				<!-- javadoc -->
 				<plugin>
 					<artifactId>maven-javadoc-plugin</artifactId>
-					<version>3.6.0</version>
+					<version>3.6.2</version>
 					<configuration>
 						<detectJavaApiLink>false</detectJavaApiLink>
 						<source>${maven.compiler.target}</source>
@@ -196,7 +196,7 @@
 			<!-- surefire -->
 			<plugin>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>3.2.1</version>
+				<version>3.2.2</version>
 			</plugin>
 
 			<!-- site -->
@@ -250,7 +250,7 @@
 			<!-- pmd -->
 			<plugin>
 				<artifactId>maven-pmd-plugin</artifactId>
-				<version>3.21.0</version>
+				<version>3.21.2</version>
 				<configuration>
 					<linkXref>true</linkXref>
 					<sourceEncoding>${project.build.sourceEncoding}</sourceEncoding>
@@ -278,7 +278,7 @@
 			<!-- surefire -->
 			<plugin>
 				<artifactId>maven-surefire-report-plugin</artifactId>
-				<version>3.2.1</version>
+				<version>3.2.2</version>
 			</plugin>
 
 			<!-- javadoc -->
