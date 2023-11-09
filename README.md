@@ -1,5 +1,10 @@
 # oss-maven-template
 
+![GitHub release (with filter)](https://img.shields.io/github/v/release/sentrysoftware/oss-maven-template)
+![Build](https://img.shields.io/github/actions/workflow/status/sentrysoftware/oss-maven-template/deploy.yml)
+![GitHub top language](https://img.shields.io/github/languages/top/sentrysoftware/oss-maven-template)
+![License](https://img.shields.io/github/license/sentrysoftware/oss-maven-template)
+
 Repository template for all Sentry open-source Java projects, published on Maven Central.
 
 ## Build instructions
