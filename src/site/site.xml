@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project name="${project.name}">
 
 	<skin>
 		<groupId>org.sentrysoftware.maven</groupId>
 		<artifactId>sentry-maven-skin</artifactId>
-		<version>6.1.00</version>
+		<version>6.2.00</version>
 	</skin>
 
+	<bannerLeft>
+		<src>images/sentry-logo-114x40-white.png</src>
+		<href>https://sentrysoftware.org</href>
+	</bannerLeft>
+
 	<custom>
-		<noDefaultLinks>true</noDefaultLinks>
 		<keywords>open source,oss</keywords>
 	</custom>
 
@@ -16,7 +20,6 @@
 
 		<links>
 			<item name="Fork on GitHub" href="${project.scm.url}" />
-			<!-- <item name="First Link" href="https://sentrysoftware.com" /> -->
 		</links>
 
 		<menu name="User Documentation">

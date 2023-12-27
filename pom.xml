@@ -58,8 +58,6 @@
 
 	<properties>
 		<!-- Java 11 -->
-		<maven.compiler.source>11</maven.compiler.source>
-		<maven.compiler.target>11</maven.compiler.target>
 		<maven.compiler.release>11</maven.compiler.release>
 
 		<!-- UTF-8 -->
@@ -109,7 +107,7 @@
 					<version>3.6.3</version>
 					<configuration>
 						<detectJavaApiLink>false</detectJavaApiLink>
-						<source>${maven.compiler.target}</source>
+						<source>${maven.compiler.release}</source>
 						<show>public</show>
 						<notimestamp>true</notimestamp>
 					</configuration>
@@ -218,6 +216,12 @@
 				<version>3.3.0</version>
 			</plugin>
 
+			<!-- install -->
+			<plugin>
+				<artifactId>maven-install-plugin</artifactId>
+				<version>3.1.1</version>
+			</plugin>
+
 			<!-- deploy -->
 			<plugin>
 				<artifactId>maven-deploy-plugin</artifactId>
@@ -255,10 +259,7 @@
 					<linkXref>true</linkXref>
 					<sourceEncoding>${project.build.sourceEncoding}</sourceEncoding>
 					<minimumTokens>50</minimumTokens>
-					<targetJdk>${maven.compiler.target}</targetJdk>
-					<rulesets>
-						<ruleset>pmd.xml</ruleset>
-					</rulesets>
+					<targetJdk>${maven.compiler.release}</targetJdk>
 				</configuration>
 			</plugin>
 
@@ -297,6 +298,22 @@
 			<plugin>
 				<artifactId>maven-project-info-reports-plugin</artifactId>
 				<version>3.5.0</version>
+				<reportSets>
+					<reportSet>
+						<reports>
+							<report>ci-management</report>
+							<report>dependencies</report>
+							<report>dependency-info</report>
+							<report>distribution-management</report>
+							<report>issue-management</report>
+							<report>licenses</report>
+							<report>plugins</report>
+							<report>scm</report>
+							<report>summary</report>
+							<report>team</report>
+						</reports>
+					</reportSet>
+				</reportSets>
 			</plugin>
 
 		</plugins>
