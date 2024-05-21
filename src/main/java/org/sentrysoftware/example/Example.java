@@ -23,12 +23,21 @@ package org.sentrysoftware.example;
 /**
  * An Example class
  */
-public class Example {
+public final class Example {
 
 	/**
 	 * The main function
+	 *
+	 * @param args Arguments passed to main
 	 */
-	public static void main() {
+	public static void main(final String[] args) {
 		System.out.println("Hello Open-source World!");
+	}
+
+	/**
+	 * Private constructor to prevent instantiation
+	 */
+	private Example() {
+		throw new UnsupportedOperationException("This is a utility class and cannot be instantiated");
 	}
 }

@@ -4,7 +4,7 @@
 	<skin>
 		<groupId>org.sentrysoftware.maven</groupId>
 		<artifactId>sentry-maven-skin</artifactId>
-		<version>6.2.00</version>
+		<version>6.4.01</version>
 	</skin>
 
 	<bannerLeft>
@@ -12,14 +12,63 @@
 		<href>https://sentrysoftware.org</href>
 	</bannerLeft>
 
+	<bannerRight>
+		<href>${project.scm.url}</href>
+		<name><![CDATA[<i class="fa-brands fa-github"></i> Edit on GitHub]]></name>
+	</bannerRight>
+
 	<custom>
 		<keywords>open source,oss</keywords>
+
+		<social>
+			<twitter>sentrysoftware</twitter>
+			<linkedin>sentry-software</linkedin>
+			<custom>
+				<title>Learn about our solutions on YouTube</title>
+				<href>https://www.youtube.com/SentrySoftware</href>
+				<icon>fa-brands fa-youtube</icon>
+			</custom>
+			<custom>
+				<title>Join us on Slack!</title>
+				<href>https://sentrysoftware.com/about/join-slack-community.html</href>
+				<icon>fa-brands fa-slack</icon>
+			</custom>
+		</social>
+
+		<additionalLinks>
+			<link>
+				<name>Terms of Service</name>
+				<href>https://sentrysoftware.com/legal/general.html</href>
+			</link>
+			<link>
+				<name>Privacy Policy</name>
+				<href>https://sentrysoftware.com/legal/privacy.html</href>
+			</link>
+			<link>
+				<name>Cookie Policy</name>
+				<href>https://sentrysoftware.com/legal/cookies.html</href>
+			</link>
+			<link>
+				<name>Disclaimer</name>
+				<href>https://sentrysoftware.com/legal/disclaimer.html</href>
+			</link>
+			<link>
+				<name>Trademarks</name>
+				<href>https://sentrysoftware.com/legal/trademarks.html</href>
+			</link>
+			<link>
+				<name>Code of Ethics</name>
+				<href>https://sentrysoftware.com/legal/ethics.html</href>
+			</link>
+		</additionalLinks>
+
 	</custom>
 
 	<body>
 
 		<links>
-			<item name="Fork on GitHub" href="${project.scm.url}" />
+			<item name="Other Repositories" href="https://sentrysoftware.org/repos.html" />
+			<item name="How to Contribute" href="https://sentrysoftware.org/contributing.html" />
 		</links>
 
 		<menu name="User Documentation">
