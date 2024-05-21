@@ -34,7 +34,7 @@ public final class Example {
 		System.out.println("Hello Open-source World!");
 	}
 
-		/**
+	/**
 	 * Private constructor to prevent instantiation
 	 */
 	private Example() {
